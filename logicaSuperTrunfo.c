@@ -8,7 +8,7 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
-     int qnt_pontos_turisticos; 
+    int qnt_pontos_turisticos; 
     int qnt_pontos_turisticos1;
     unsigned long int populacao; 
     unsigned long int populacao1;
@@ -168,39 +168,39 @@ int main() {
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
     if(populacao > populacao1){
-        printf("Cidade 1 tem a maior quantidade de habitantes \n");
+        printf("Cidade 1 tem a maior quantidade de habitantes, Carta 1 Venceu! \n");
     }else{
-        printf("Cidade 2 tem a maior quantidade de habitantes \n");
+        printf("Cidade 2 tem a maior quantidade de habitantes, Carta 2 Venceu! \n");
     }
 
     if(area > area1){
-        printf("Cidade 1 tem maior quantidade de área %.2f km²\n", area);
+        printf("Cidade 1 tem maior quantidade de área %.2f km², Carta 1 Venceu! \n", area);
     }else{
-        printf("Cidade 2 tem maior quantidade de área %.2f km²\n", area1);
+        printf("Cidade 2 tem maior quantidade de área %.2f km², Carta 2 Venceu!\n", area1);
     }
 
     if(pib > pib1){
-        printf("Ciade 1 tem maior Produto Interno Bruto (PIB)\n");
+        printf("Ciade 1 tem maior Produto Interno Bruto (PIB), Carta 1 Venceu!\n");
     }else{
-        printf("Cidade 2 tem maior Produto Interno Bruto (PIB)\n");
+        printf("Cidade 2 tem maior Produto Interno Bruto (PIB), Carta 2 Venceu!\n");
     }
 
     if(qnt_pontos_turisticos > qnt_pontos_turisticos1){
-        printf("Cidade 1 tem maior quantidade de pontos turisticos\n");
+        printf("Cidade 1 tem maior quantidade de pontos turisticos, Carta 1 Venceu!\n");
     }else{
-        printf("Cidade 2 tem maior quantidade de pontos turisticos\n");
+        printf("Cidade 2 tem maior quantidade de pontos turisticos, Carta 2 Venceu!\n");
     }
 
     if(dense_populacional < dense_populacional1){
-        printf("Cidade 1 tem menpr densidade populacional\n");
+        printf("Cidade 1 tem menpr densidade populacional, Carta 1 Venceu!\n");
     }else{
-        printf("Cidade 2 tem maior densidade populacional\n");
+        printf("Cidade 2 tem maior densidade populacional, Carta 2 Venceu!\n");
     }
 
     if(pib_percapita > pib_percapita1){
-        printf("Cidade 1 tem maior quantidade de PIB per Captal\n");
+        printf("Cidade 1 tem maior quantidade de PIB per Captal, Carta 1 Venceu!\n");
     }else{
-        printf("Cidade 2 tem maior quantidade de PIB per Capital\n");
+        printf("Cidade 2 tem maior quantidade de PIB per Capital, Carta 2 Venceu!\n");
     }
 
     return 0;
