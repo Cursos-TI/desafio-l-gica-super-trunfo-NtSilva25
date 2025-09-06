@@ -10,6 +10,7 @@ int main() {
     // Você pode utilizar o código do primeiro desafio
     int qnt_pontos_turisticos; 
     int qnt_pontos_turisticos1;
+    int escolhajogador;
     unsigned long int populacao; 
     unsigned long int populacao1;
 
@@ -150,6 +151,8 @@ int main() {
     printf("PIB per Capta: %.2f reais \n", pib_percapita);
     printf("Super Poder: %.2f \n", super_poder);
 
+    printf("\n");
+
     //Segunda Carta
 
     printf("carta 02: \n");
@@ -164,44 +167,92 @@ int main() {
     printf("PIB per Capta: %.2f reais \n", pib_percapita1);
     printf("Super Poder: %.2f \n", super_poder1);
 
+    printf("\n");
+
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
-    if(populacao > populacao1){
-        printf("Cidade 1 tem a maior quantidade de habitantes, Carta 1 Venceu! \n");
-    }else{
-        printf("Cidade 2 tem a maior quantidade de habitantes, Carta 2 Venceu! \n");
-    }
+    printf("### Comparação ### \n");
+    printf("1 - População.\n");
+    printf("2 - PIB per Captal. \n");
+    printf("3 - Densidade Demográfica. \n");
+    printf("4 - Número de Pontos Turisticos. \n");
+    perintf("Escolha um tipo de valor para a comparação: \n");
+    scanf("%d", &escolhajogador);
 
-    if(area > area1){
-        printf("Cidade 1 tem maior quantidade de área %.2f km², Carta 1 Venceu! \n", area);
-    }else{
-        printf("Cidade 2 tem maior quantidade de área %.2f km², Carta 2 Venceu!\n", area1);
-    }
+    switch (escolhajogador)
+    {
+    case 1:
 
-    if(pib > pib1){
-        printf("Ciade 1 tem maior Produto Interno Bruto (PIB), Carta 1 Venceu!\n");
-    }else{
-        printf("Cidade 2 tem maior Produto Interno Bruto (PIB), Carta 2 Venceu!\n");
-    }
+        printf("Você escolheu a variavel População para a comparação!\n");
 
-    if(qnt_pontos_turisticos > qnt_pontos_turisticos1){
-        printf("Cidade 1 tem maior quantidade de pontos turisticos, Carta 1 Venceu!\n");
-    }else{
-        printf("Cidade 2 tem maior quantidade de pontos turisticos, Carta 2 Venceu!\n");
-    }
+        if (populacao > populacao1)
+        {
+            printf("Carta 01 com o total da população de: %.2f Venceu!", populacao);
+        }else if (populacao < populacao1)
+        {
+            printf("Carta 02 com o total da população de: %.2f Venceu!", populacao1);
+        }else{
+            printf("Empate! Valor de ambos as cartas são iguais\n");
+        } 
 
-    if(dense_populacional < dense_populacional1){
-        printf("Cidade 1 tem menpr densidade populacional, Carta 1 Venceu!\n");
-    }else{
-        printf("Cidade 2 tem maior densidade populacional, Carta 2 Venceu!\n");
-    }
+        break;
 
-    if(pib_percapita > pib_percapita1){
-        printf("Cidade 1 tem maior quantidade de PIB per Captal, Carta 1 Venceu!\n");
-    }else{
-        printf("Cidade 2 tem maior quantidade de PIB per Capital, Carta 2 Venceu!\n");
+     case 2:
+
+        printf("Você escolheu a variavel PIB Per capital para a comparação! \n");
+
+        if (pib_percapita > pib_percapita1)
+        {
+            printf("Carta 01 com o total de PIB Per Capital de %2.f Venceu!\n", pib_percapita);
+        }else if (pib_percapita < pib_percapita1)
+        {
+            printf("Carta 02 com o total de PIB Per Capital de %2.f Venceu!\n", pib_percapita1);
+        }else{
+            printf("Empate! O valor de ambas as cartas são iguais. \n");
+        }
+            
+        break;
+        
+    case 3:
+        
+        printf("Você escolheu a variavel Densiadade Demográfica para comparação! \n");
+
+        if (dense_populacional > dense_populacional1)
+        {
+            printf("Carta 01 com o total da Densidade Demográfica de: %.2f Venceu!\n", dense_populacional);
+        }else if (dense_populacional < dense_populacional1)
+        {
+            printf("Carta 02 com o total da densidade Demográfica de: %.2f Venceu!\n", dense_populacional1);
+        }else{
+            printf("Empate! O valor de ambas as cartas são iguais. \n");
+        }
+            
+        break;
+            
+    case 4:
+
+            printf("Você escolheu a variavel Número de Pontos Túristicos para a comparação! \n");
+
+        if (qnt_pontos_turisticos > qnt_pontos_turisticos1)
+        {
+            printf("Carta 01 com o Total de %d Pontos Túristicos Venceu!\n", qnt_pontos_turisticos);
+        }else if (pib_percapita < pib_percapita1)
+        {
+             printf("Carta 02 com o Total de %d Pontos Túristicos Venceu!\n", qnt_pontos_turisticos1);
+        }else{
+            printf("Empate! O valor de ambas as cartas são iguais. \n");
+        }
+
+        break;
+    
+    default:
+
+        printf("Opção Invalida X< \n");
+
+        break;
     }
+    
 
     return 0;
 }
